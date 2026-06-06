@@ -8,6 +8,7 @@ name: 'N2 - Execução Agendada'
 # gatilho agendado = schedule
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
