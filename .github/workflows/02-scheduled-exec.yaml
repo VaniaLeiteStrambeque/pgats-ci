@@ -8,6 +8,10 @@ name: 'N2 - Execução Agendada'
 # gatilho agendado = schedule
 
 on:
+  push:
+    branches:
+      - master
+
   schedule:
     # cronograma de execução
     # 1 - minuto, 2 - hora, 3 dia do mês, 4 - mês, 5 - dia da semana
@@ -17,9 +21,6 @@ on:
 
     #Roda toda sexta-feira à meia noite
     - cron: '0 0 * * 5'
-  push:
-    branches:
-      - master
 
 #tarefas dentro da pipeline = jobs
 
